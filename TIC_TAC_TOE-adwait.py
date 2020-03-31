@@ -78,7 +78,7 @@ def move_com(symbol):
         else:
             print("Invalid move detected please try again.")
     board[row][col] = symbol
-
+#making the move system for computer
 
 def play():
     choice = input("Hello and Welcome to the game of TIC-TAC-TOE made by FUNKY_doc@69\nChoose the game mode:\n1. Player vs Player\n2. Player Vs. Computer\n3. Computer Vs Computer\nselection: ")
@@ -97,7 +97,8 @@ def play():
                     break
         if not winner(p1s) and not winner(p2s):
             print("It was a Draw")  
-            
+#player vs player
+
     elif choice == 2:
         for turn in range(9):
             if turn % 2 == 0:
@@ -113,6 +114,7 @@ def play():
                     break
         if not winner(p1s) and not winner(c2s):
             print("It was a Draw")          
+#player vs computer
             
     elif choice == 3:
         for turn in range(9):
@@ -129,6 +131,7 @@ def play():
                     break
         if not winner(c1s) and not winner(c2s):
             print("It was a Draw")        
+#computer vs computer
                 
     else:
         print("\n!!!!Invalid input detected destroying process!!!!\n")
